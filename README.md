@@ -4,7 +4,7 @@
 
 ## Overview
 
-This professional dashboard analyzes sales and profit data to identify trends, patterns, and actionable business insights. By visualizing key performance indicators related to sales performance, profit margins, product categories, customer segments, and geographic regions, this tool empowers business decision-makers to optimize their strategies and improve overall profitability.
+This professional Tableau dashboard analyzes sales and profit data to identify trends, patterns, and actionable business insights. By visualizing key performance indicators related to sales performance, profit margins, product categories, customer segments, and geographic regions, this tool empowers business decision-makers to optimize their strategies and improve overall profitability.
 
 ## Features
 
@@ -13,7 +13,7 @@ This professional dashboard analyzes sales and profit data to identify trends, p
 - **Customer Segmentation**: Understand the behavior and value of different customer segments
 - **Geographic Analysis**: Visualize sales and profit distribution across different markets and regions
 - **Product Category Performance**: Identify the best and worst performing product categories
-- **Interactive Visualizations**: Explore the data through Python visualizations and Tableau dashboards
+- **Interactive Visualizations**: Rich, interactive Tableau dashboards with drill-down capabilities
 - **Export Functionality**: Export insights and reports for stakeholder presentations
 
 ## Project Structure
@@ -21,22 +21,13 @@ This professional dashboard analyzes sales and profit data to identify trends, p
 ```
 Sales-and-Profit-Performance-Dashboard/
 ├── data/
-│   ├── raw/               # Raw, immutable data
-│   │   └── Sales dataset.csv  # Original sales data
-│   └── processed/         # Cleaned, transformed data ready for analysis
-├── notebooks/             # Jupyter notebooks for exploration and analysis
-│   └── sales_analysis.ipynb  # Main analysis notebook
-├── src/                   # Source code for data processing and analysis
-│   ├── data_processing.py # Data loading, cleaning, and feature generation
-│   ├── analysis.py        # Business analysis functions
-│   ├── visualization.py   # Data visualization functions
-│   └── main.py            # Main execution script
-├── visualizations/        # Output visualizations and Tableau workbooks
-│   └── sales and profit analysis.twb  # Tableau dashboard
+│   └── raw/               # Raw, immutable data
+│       └── Sales dataset.csv  # Original sales data
+├── visualizations/        # Tableau workbooks
+│   └── sales and profit analysis.twb  # Main Tableau dashboard
 ├── docs/                  # Documentation files
 │   └── requirements.md    # Detailed requirements documentation
 ├── .gitignore            # Git ignore file
-├── requirements.txt       # Required Python packages
 └── README.md              # Project overview
 ```
 
@@ -44,9 +35,8 @@ Sales-and-Profit-Performance-Dashboard/
 
 ### Prerequisites
 
-- Python 3.8+ 
-- Pandas, NumPy, Matplotlib, Seaborn, Plotly
-- Tableau Desktop/Public (optional, for viewing .twb files)
+- Tableau Desktop/Public (required for viewing and interacting with .twb files)
+- Tableau Reader (for users who only need to view the dashboard)
 
 ### Installation
 
@@ -56,36 +46,16 @@ Sales-and-Profit-Performance-Dashboard/
    cd Sales-and-Profit-Performance-Dashboard
    ```
 
-2. Create and activate virtual environment (optional but recommended):
-   ```bash
-   python -m venv venv
-   # On Windows
-   venv\Scripts\activate
-   # On macOS/Linux
-   source venv/bin/activate
-   ```
-
-3. Install required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ### Usage
 
-1. Data Processing and Analysis:
-   ```bash
-   python src/main.py
-   ```
-
-2. Explore the Jupyter notebook for detailed analysis:
-   ```bash
-   jupyter notebook notebooks/sales_analysis.ipynb
-   ```
-
-3. View the Tableau dashboard:
+1. View the Tableau dashboard:
    - Open Tableau Desktop or Tableau Public
    - Open `visualizations/sales and profit analysis.twb`
    - Interact with the visualizations to explore different dimensions of the data
+   
+2. Export insights:
+   - Use Tableau's built-in export functionality to save visualizations as images or PDFs
+   - Create custom dashboard views for different stakeholder presentations
 
 ## Data Description
 
@@ -116,19 +86,19 @@ The dataset includes the following key fields:
 
 ## Analysis Highlights
 
-- **Time Series Analysis**: Seasonal trends in sales and profits
-- **Product Category Performance**: Comparative analysis of product categories by profitability
-- **Geographic Sales Distribution**: Heat maps showing regional sales concentration
-- **Customer Segment Analysis**: RFM (Recency, Frequency, Monetary) analysis of customer segments
-- **Correlation Analysis**: Key relationships between pricing, sales volume, and profitability
-- **Forecasting**: Predictive models for future sales trends
+- **Time Series Analysis**: Seasonal trends in sales and profits through Tableau's time series visualizations
+- **Product Category Performance**: Comparative analysis of product categories by profitability using Tableau's bar charts and tree maps
+- **Geographic Sales Distribution**: Heat maps and filled maps showing regional sales concentration
+- **Customer Segment Analysis**: Analysis of customer segments through Tableau's grouping and filtering capabilities
+- **Correlation Analysis**: Key relationships between pricing, sales volume, and profitability using Tableau's scatter plots and dual-axis charts
+- **Forecasting**: Sales trends forecasting using Tableau's built-in forecasting features
 
 ## Future Improvements
 
 - Predictive analytics for sales forecasting using machine learning
 - Customer lifetime value analysis and segmentation
 - Market basket analysis for product recommendations
-- Interactive web dashboard with Flask/Dash/Streamlit
+- Interactive web dashboard with Tableau Public or Tableau Server
 - Real-time data pipeline integration
 - Mobile-responsive dashboard design
 
