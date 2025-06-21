@@ -108,9 +108,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Data sourced from [mention data source if applicable]
-- Inspired by best practices in business intelligence and data visualization
+This project is licensed  under the MIT License - see the LICENSE file for details.
